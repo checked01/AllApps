@@ -1,0 +1,6 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $.get('http://jsonp.jit.su/?url=http://5.175.191.73/example.json', function(data){
+    alert('pretty awesome, eh? ' + data.awesome);
+  });
+</script>
