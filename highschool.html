@@ -1,4 +1,17 @@
 <html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $.get('http://jsonp.jit.su/?url=http://5.175.191.73/alert.php', function(data){
+  var alertstate=data.isit;
+  var information=data.info;
+  
+if (alertstate==1) {
+alert(information);
+document.getElementById('theImg').src="http://fusion.mine.bz/alertt.gif";
+play_single_sound(audiotag1);
+}
+  });
+</script>
 <style>
 *{
 margin:0px;
@@ -84,7 +97,7 @@ box-shadow: 0px 3px 5px #888888;
 </div>
 </div>
 <div align="center">
-<img style="max-width:100%; height:auto; width:auto;" src="http://infinite.mine.bz/alert.png">
+<a href="#" onClick="$.get('http://jsonp.jit.su/?url=http://5.175.191.73/alert.php', function(data){var information=data.info;alert(information);});"><img id="theImg" style="max-width:100%; height:auto; width:auto;" src="http://infinite.mine.bz/alert.png"></a>
 <br><br><br>
 </div>
 <div class="image">
@@ -98,8 +111,8 @@ box-shadow: 0px 3px 5px #888888;
 <img style="max-width:50%; height:auto; width:auto;" src="http://infinite.mine.bz/cbutton.png">
 <img style="max-width:50%; height:auto; width:auto;" src="http://infinite.mine.bz/nbutton.png">
 <br>
-<img style="max-width:50%; height:auto; width:auto;" src="http://infinite.mine.bz/cobutton.png">
-<img style="max-width:50%; height:auto; width:auto;" src="http://infinite.mine.bz/lbutton.png">
+<img style="max-width:100%; height:auto; width:auto;" src="http://infinite.mine.bz/cobutton.png">
+<img style="max-width:100%; height:auto; width:auto;" src="http://infinite.mine.bz/lbutton.png">
 </div>
 </div>
 <a href="#"><img src="http://fusion.mine.bz/planner.png" />
