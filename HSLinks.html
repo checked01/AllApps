@@ -1,0 +1,163 @@
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $.get('http://jsonp.jit.su/?url=http://5.175.191.73/alert.php', function(data){
+  var alertstate=data.isit;
+  var information=data.info;
+  
+if (alertstate==1) {
+document.getElementById('theImg').src="http://fusion.mine.bz/alertt.gif";
+play_single_sound(audiotag1);
+}
+  });
+</script>
+<script>
+function schooltool() {
+    var x;
+    if (confirm("SchoolTool: View student grades, attendance, and courses. Click ok to navigate to the website") == true) {
+        window.open('http://schooltool.queensburyschool.org/schooltoolweb/default.aspx');
+    } else {
+        
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+function moodle() {
+    var x;
+    if (confirm("Moodle: Teacher links are located on this website. Click ok to navigate to the website") == true) {
+        window.open('http://moodle.queensburyschool.org/moodle/');
+    } else {
+        
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+function library() {
+    var x;
+    if (confirm("Library: View the library catalog and useful links for research projects. Click ok to navigate to the website") == true) {
+        window.open('http://qbyh.wswhe.opalsinfo.net/bin/home');
+    } else {
+        
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+function classwebpages() {
+    var x;
+    if (confirm("HighSchool ClassPages: View teachers personal web pages for homework, information, and more. Click ok to navigate to the website") == true) {
+        window.open('http://qufsd.schoolwires.net//site/Default.aspx?PageID=199');
+    } else {
+        
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+.container{
+width:100%;
+height:auto;
+overflow:auto;
+background-size:cover;
+background:#265787;
+}
+.logo{
+padding-top:40px;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+}
+.alert{
+padding: 10px 160px 10px 160px;
+text-decoration: none;
+font: bold 30px Arial;
+background-color:white;
+border-radius:10px;
+border-color:red;
+border-width:1px;
+border-style:solid;
+}
+.image{
+width:80%;
+background-repeat:no-repeat;
+margin-left:auto;
+margin-right:auto;
+}
+.brs{
+width:100%;
+margin-left:auto;
+margin-right:auto;
+}
+.img-rounded {
+border-radius: 10px;
+}
+.button1{
+font: bold 30px Arial;
+text-decoration: none;
+background-color:gold;
+padding: 20px 160px 20px 160px;
+border-radius:10px;
+box-shadow: 0px 3px 5px #888888;
+}
+.button2{
+font: bold 30px Arial;
+text-decoration: none;
+background-color:gold;
+padding: 20px 151px 20px 151px;
+border-radius:10px;
+box-shadow: 0px 3px 5px #888888;
+}
+.button3{
+font: bold 30px Arial;
+text-decoration: none;
+background-color:gold;
+padding: 20px 192px 20px 192px;
+border-radius:10px;
+box-shadow: 0px 3px 5px #888888;
+}
+.button4{
+font: bold 30px Arial;
+text-decoration: none;
+background-color:gold;
+padding: 20px 205px 20px 205px;
+border-radius:10px;
+box-shadow: 0px 3px 5px #888888;
+}
+</style>
+<div class="container">
+<div class="logo">
+<div align="center">
+<a href="http://queensburyschool.org">
+<img style="max-width: 100%; height: auto; width:auto;" src="http://5.175.191.73/hslinkslogo.png">
+</a>
+<br><br><br>
+</div>
+</div>
+<div align="center">
+<a href="#" onClick="$.get('http://jsonp.jit.su/?url=http://5.175.191.73/alert.php', function(data){var information=data.info;alert(information);});"><img id="theImg" style="max-width:100%; height:auto; width:auto;" src="http://infinite.mine.bz/alert.png"></a>
+<br><br><br>
+</div>
+<div class="image">
+<div align="center">
+
+<br><br>
+</div>
+</div>
+<div class="brs">
+<div align="center">
+<div>
+<img onClick="schooltool();" style="max-width:49%; width:auto; height:auto;" src="https://trello-attachments.s3.amazonaws.com/5300dedbe5434f8c464a0017/536293e24624550e350cc18b/250x180/7cf1398f01774eedf4b0eeb28565a07f/schooltool.png" />
+<img onClick="moodle();" style="max-width:49%; width:auto; height:auto;" src="https://trello-attachments.s3.amazonaws.com/5300dedbe5434f8c464a0017/536293e24624550e350cc18b/250x180/36f00fc7fa33b4810ed029d894d4ff3e/moodleicon.png" />
+<br><br><br><br><br>
+<img onClick="library();" style="max-width:49%; width:auto; height:auto;" src="https://trello-attachments.s3.amazonaws.com/5300dedbe5434f8c464a0017/536293e24624550e350cc18b/250x180/95f7aba62a283e437844b285eeb04275/library.png" />
+<img onClick="classwebpages();" style="max-width:49%; width:auto; height:auto;" src="https://trello-attachments.s3.amazonaws.com/5300dedbe5434f8c464a0017/536293e24624550e350cc18b/250x180/d3497c9452f01b9b57d7a43aa352d30d/classwebicon.png" />
+</div>
+</div>
+<div align="center" style="padding-bottom:10px; padding-top:10px; margin-top:50px; background-image:url('http://www.denarend.com/miscellaneous/webmaster/translucent_backgrounds/images/colors/1-blacklighter01.png');">
+<a href="index.html"><img style="margin-right:20px; max-width:50px;" src="http://infinite.mine.bz/backbutton.PNG" /></a>
+<a href="calendar.html"><img style="max-width:50px;" src="http://infinite.mine.bz/calendar-icon.png" /></a>
+<a href="planner.html"><img style="margin-left:20px; max-width:50px;" src="http://www.creativeparties.co.za/images/guestbook_icon.png" /></a>
+<a href="alerts.html"><img style="margin-left:20px; max-width:50px;" src="http://www.hallco.org/fbhs/site/images/stories/webicons/bell.png" /></a>
+</div>
+</div>
+<html>
